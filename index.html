@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Tempo Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <div id="wrapper">
+        <div id="playingField">
+            <img id="songCover" src="images/spotify_logo.png" alt="">
+            <section id="preGameInformation">
+                <div id="preGame">
+                    <h1>SPOTIFY TEMPO QUIZ</h1>
+                    <p>Got a good sense of rhythm? The rules are simple. After pressing the PLAY button a popular song will be played.
+                        After listening to a portion of the song your goal is to guess the songs tempo.
+                        Points are awarded based on how close your guess is. After you have guessed on 5 songs, you recieve a final score.
+                    </p>
+                    <button id="playButton">PLAY</button>
+                </div>
+            </section>
+            <div id="gameBoard">
+                <iframe id="trackPreview" src="" width="400" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <input id ="guessInput" type="number">
+                <button id="guessButton">GUESS</button>
+                    <div id="answer">
+                        <h2 id="playerGuess">You guessed: X</h2>
+                        <h2 id="correctAnswer">The correct answer was: Y</h2>
+                        <h3 id="scoreGained">Points gained: Z</h3>
+                        <button id="nextSongButton">NEXT SONG</button>
+                    </div>
+                <h6 id="songNumber">SONG X OF 10</h6>
+            </div>
+            <div id="gameOverScreen">
+                <h1>GAME OVER</h1>
+                <h2 id="playerScore">Your final score was: X</h2>
+                <button id="restartButton">PLAY AGAIN</button>
+            </div>
+            <div id="errorScreen">
+                <h1>Oops, something went wrong!</h1>
+                <button id="errorButton" onclick= "window.location.reload()">RESTART</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/game.js"></script>
+    <script src="scripts/animation.js"></script>
+</body>
+</html>

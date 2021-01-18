@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+#playingField{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 0 auto;
+    width: 50rem;
+    height: 50rem;
+    background-color: #2C3134;
+    border-radius: 1rem;
+
+    color: whitesmoke;
+
+    overflow: hidden;
+}
+
+#preGameInformation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+#preGame p{
+    width: 30rem;
+    margin: 0;
+    padding: 0;
+}
+
+#gameBoard{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+#songCover{
+    margin-top: 1rem;
+    height: 25rem;
+    width: 25rem;
+    box-shadow: 0px 10px 9px 0px rgba(0,0,0,0.75);
+}
+
+#guessInput{
+    height: 3rem;
+    width: 10rem;
+
+    font-size: 2rem;
+    text-align: center;
+    -webkit-appearance: none;
+    margin-top: 1rem;
+}
+
+#songNumber{
+    margin-top: 8rem;
+}
+
+#trackPreview{
+    margin-top: 1rem;
+}
+
+#answer{
+    position: fixed;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+    color: black;
+    box-shadow: 0px 10px 9px 0px rgba(0,0,0,0.75);
+
+    width: 25rem;
+    height: 20rem;
+
+    bottom: 65rem;
+}
+
+#nextSongButton{
+    margin-top: 0;
+}
+
+#gameOverScreen{
+    position: fixed;
+
+    bottom: 30rem;
+    width: 25rem;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    font-family: 'Montserrat';
+}
+
+#gameOverScreen h1{
+    font-size: 3rem;
+    margin: 0;
+}
+
+#playerScore h2{
+    font-weight: normal;
+    margin: 0;
+}
+
+#errorScreen{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    opacity: 0;
+}
+
+button{
+    margin-top: 1rem;
+    width: 10rem;
+    height: 3rem;
+    background-color: whitesmoke;
+    font-weight: bold;
+    font-family: 'Montserrat';
+}
+
+button:hover{
+    background-color: #18D860;
+}
